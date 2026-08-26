@@ -1,0 +1,11 @@
+{
+  "purpose": "Positioning aid for the preprint; not a benchmark result.",
+  "axes": ["retrieval", "condition_preservation", "selective_abstention", "coordinate_provenance", "documentary_contract"],
+  "entries": [
+    {"work": "RAG", "retrieval": true, "condition_preservation": false, "selective_abstention": false, "coordinate_provenance": false, "documentary_contract": false, "difference": "VeriQuery evaluates evidence state after retrieval rather than treating retrieved text as sufficient support."},
+    {"work": "Layout-aware document understanding", "retrieval": false, "condition_preservation": true, "selective_abstention": false, "coordinate_provenance": true, "documentary_contract": false, "difference": "VeriQuery connects layout-addressable facts to a gated decision contract."},
+    {"work": "Selective prediction", "retrieval": false, "condition_preservation": false, "selective_abstention": true, "coordinate_provenance": false, "documentary_contract": false, "difference": "VeriQuery applies abstention to evidence completeness and reports coverage/false-safe trade-offs."},
+    {"work": "Agentic RAG", "retrieval": true, "condition_preservation": false, "selective_abstention": "sometimes", "coordinate_provenance": false, "documentary_contract": false, "difference": "The contribution is an auditable contract shared across retrieval, extraction, and verification; agent orchestration is context."},
+    {"work": "VeriQuery", "retrieval": true, "condition_preservation": true, "selective_abstention": true, "coordinate_provenance": true, "documentary_contract": true, "difference": "Evidence-state control evaluated with negative retrieval results, condition-aware extraction, and fail-closed formal stress."}
+  ]
+}
